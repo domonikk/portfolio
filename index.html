@@ -26,7 +26,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                    <li class="nav__item">
-                       <a href="#home" class="nav__link">
+                       <a href="#home" class="nav__link active-link">
                         <i class="uil uil-estate nav__icon"></i> Home
                        </a>
                    </li>
@@ -40,11 +40,7 @@
                         <i class="uil uil-file-alt nav__icon"></i> Skills
                        </a>
                    </li>
-                   <li class="nav__item">
-                       <a href="#services" class="nav__link">
-                        <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                       </a>
-                   </li>
+                  
                    <li class="nav__item">
                        <a href="#portfolio" class="nav__link">
                         <i class="uil uil-scenery nav__icon"></i> Portfolio
@@ -58,7 +54,10 @@
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div> 
-            <div class="nav__btns">
+            <div class="nav__btns"> 
+
+                <!--Theme change button--> 
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -128,9 +127,9 @@
                 <img src="assets/img/about.jpeg" alt="" class="about__img"> 
                 
                 <div class="about__data">
-                    <p class="about__description">I'm a Junior Web Developer who became involved in numerous extra curricular activities where I found my passion for problem solving. I was first exposed to Computer Science at the prestigious St.Andrew High School for Girls' where I fell in love with it. It's also where I became involved in numerous clubs/activites developing my leaderships skills and engaging in team building excercises.  
-                        <br>
-                    I continued building these skills at the Unviersity of the West Indies, Mona where I was involved in the faculty committee, clubs and multiple team projects. I graduated with a BSc in Computer Science and I continue to hone my skills in Web Development by working on numerous projects.</p> 
+                    <p class="about__description">I'm a Junior Web Developer who became involved in numerous extra curricular activities where I found my passion for problem solving. I became involved in numerous clubs/activites developing my leaderships skills and engaging in team building excercises.  
+                    <br>
+                    I continued building these skills at the Unviersity of the West Indies, Mona where I  graduated with a BSc in Computer Science and I continue to hone my skills in Web Development by working on numerous projects.</p> 
 
                     <div class="about__info">
                         <div>
@@ -316,7 +315,7 @@
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section"> 
+        <section class="qualification section" id="qualification"> 
             <h2 class="section__title">Qualification</h2> 
             <span class="section__subtitle">My Personal Journey</span> 
 
@@ -418,12 +417,7 @@
             </div>
         </section>
 
-        <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
-            
-
-        </section>
-
+   
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2> 
@@ -518,33 +512,111 @@
 
         </section>
 
-        <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
-
-
-        </section>
-
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
-            
-
-        </section>
+    
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact"> 
+            <h2 class="section__title">Contact Me</h2> 
+            <span class="section__subtitle">Get in touch</span> 
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i> 
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3> 
+                            <span class="contact__subtitle">(876) 799-1097</span>
+                        </div>
+                    </div> 
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email Me</h3> 
+                            <span class="contact__subtitle">domonique.eccleston@gmail.com</span>
+                        </div>
+                    </div> 
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i> 
+
+                        <div>
+                            <h3 class="contact__title">Location</h3> 
+                            <span class="contact__subtitle">Kingston, Jamaica</span>
+                        </div>
+                    </div>
+                </div> 
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid"> 
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label> 
+                            <input type="text" class="contact__input">
+                        </div> 
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label> 
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>  
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Project</label> 
+                        <input type="text" class="contact__input">
+                    </div> 
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label> 
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div> 
+
+                    <div>
+                        <a href="" class="button button--flex">
+                            Send Message 
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
 
 
         </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
+    <footer class="footer"> 
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Domonique</h1> 
+                    <span class="footer__subtitle">Web Developer</span>
+                </div> 
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul> 
+            </div> 
+
+            <p class="footer__copy">&#169; Bedimcode. All right reserved</p>
+        </div>
 
         
     </footer>
     
     <!--==================== SCROLL TOP ====================-->
-    
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
